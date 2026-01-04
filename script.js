@@ -62,21 +62,44 @@ document.addEventListener("DOMContentLoaded", (event) => {
     opacity:0,
   });
 
-  let lt=gsap.timeline({
+  let tl2=gsap.timeline({
     scrollTrigger: {
       trigger: ".main2",
-      start: "0% 0%",
-      end: "300% 100%",
+      start: "0% 100%",
+      end: "30% 70%",
       // markers: true,
-      pin: true,
+      // pin: true,
       scrub: 1,
     }
   });
 
-  lt.to(".innermain",{
+  tl2.to(".innermain",{
     scale:1,
   })
 
+  let tl3=gsap.timeline({
+    scrollTrigger:{
+      trigger:".main3",
+      start:"30% 68%",
+      end:"80% 80%",
+      // markers:true,
+      scrub:2,
+    }
+  })
 
+  tl3.to(".main3img ",{
+    x:"-5%"
+  },'same')
+
+  tl3.to(".main3img :nth-child(1)",{
+    opacity:1,
+  },'same')
+
+
+  tl3.to(".main3img :nth-child(1)",{
+    x:"11%"
+  })
+
+  
 
 });

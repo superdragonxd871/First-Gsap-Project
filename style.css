@@ -175,7 +175,7 @@ border: 1px solid rgba(255, 255, 255, 0.47);
 }
 
 .innermain{
-    scale:0;
+    scale:0.8;
     height: 100%;
     width: 100%;
     background-color: white;
@@ -226,4 +226,64 @@ border: 1px solid rgba(255, 255, 255, 0.47);
 
 .para2 :nth-child(2){
     width:39%;
+}
+
+.main3{
+    height: 145vh;
+    width: 100%;
+    overflow:hidden;
+    background-color: black;
+}
+
+.main3 .uppertext{
+    background-color:black;
+    height: 35vh;
+    width: 100%;
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    font-family:font1;
+    color: white;
+}
+
+.main3 .uppertext h1{
+    font-size: 3.8vw;
+}
+
+.main3img{
+    display: flex;
+    height:80vh;
+    width:150%;
+    gap:120px;
+    transform: translateX(-29%);
+}
+
+.main3img img{
+    height: 100%;
+}
+
+.main3img :nth-child(1){
+    opacity: 0.2;
+}
+
+
+
+.main3 .bottomtext{
+    color: white;
+    font-family: font1;
+    display: flex;
+    justify-content:space-around;
+    align-items: center; 
+    height:18vh;
+    gap:200px;
+}
+
+.main3 .bottomtext p{
+    width: 30%;
+}
+
+.main4{
+    height: 100vh;
+    width: 100%;
+    background-color: beige;
 }
