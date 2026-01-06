@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       end: "300% 1%",
       // markers: true,
       pin: true,
-      scrub: 1,
+      scrub: 2,
     }
 
 
@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       end: "30% 50%",
       // markers: true,
       // pin: true,
-      scrub: 1,
+      scrub: 2,
     }
   });
 
@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       start: "30% 68%",
       end: "100% 80%",
       // markers:true,
-      scrub:1,
+      scrub:2,
     }
   })
 
@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
       // markers: true,
       start: "0% 80%",
       end: "100% 10%",
-      scrub:1,
+      scrub:2,
     }
   })
 
@@ -136,6 +136,35 @@ document.addEventListener("DOMContentLoaded", (event) => {
     x: "-60%"
   })
 
+  let tl5 = gsap.timeline({
+    scrollTrigger:{
+      trigger:".main5",
+      // markers:true,
+      start:"0% 0%",
+      end:"100% 0%",
+      scrub:2,
+      pin:true,
+
+    }
+  })
+
+  tl5.to(".main5  :nth-child(2)",{
+    opacity:1,
+    x:"0%",
+  })
+  tl5.to(".main5  :nth-child(3)",{
+    opacity:1,
+    x:"0%",
+  })
+  tl5.to(".main5  :nth-child(4)",{
+    opacity:1,
+    x:"0%",
+  },'same')
+
+  tl5.to(".main5",{
+    backgroundColor:"rgb(0,0,0)",
+    color:"#ffff"
+  },'same')
 
 
 });
